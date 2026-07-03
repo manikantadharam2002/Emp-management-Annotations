@@ -2,12 +2,21 @@ using { employee.management as db } from '../db/schema';
 
 service EmployeeService {
 
-    entity Employess as projection on db.Employye;
+    entity Employess as projection on db.Employee;
 
-    action approveEmployee(ID: UUID) returns String;
+    annotate Employess with {
 
-    function calculateBonus(salary: Decimal(10,2))
+        employeeName @title : 'Employee Name';
+
+        email @title : 'Email Address';
+
+        salary @title : 'Monthly Salary';
+
+    };
+
+    action approveEmployee(ID : UUID) returns String;
+
+    function calculateBonus(salary : Decimal(10,2))
         returns Decimal(10,2);
-    
 
 }

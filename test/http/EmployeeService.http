@@ -26,22 +26,20 @@ Authorization: Basic {{username}}:{{password}}
 
 ### Employess
 # @name Employess_PATCH
-PATCH {{server}}/odata/v4/employee/Employess('71ec34e8-a8eb-4d97-a39d-bb5f70798b80')
+PATCH {{server}}/odata/v4/employee/Employess('51a9c157-0480-446a-bf51-d3c1868cc60b')
 Content-Type: application/json
 Authorization: Basic {{username}}:{{password}}
 
 {
  
-  "employeeName": "Mahesh",
-  "email": "Mahesh@gmail.com",
-  "salary": 4870566.8
+    "salary": 4870566.8
   
 }
 
 
 ### Employess
 # @name Employess_DELETE
-DELETE {{server}}/odata/v4/employee/Employess(1850fb59-7158-4524-83e6-e5f08cfd0b56)
+DELETE {{server}}/odata/v4/employee/Employess(3b74ecdf-5e25-4bf4-848d-d3c7210585b3)
 Content-Type: application/json
 Authorization: Basic {{username}}:{{password}}
 
